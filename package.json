@@ -1,14 +1,20 @@
 {
+  "homepage": "http://SrikanthK123.github.io/Form",
   "dependencies": {
     "concurrently": "^8.2.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "client": "cd client && npm start",
     "server": "cd server && nodemon app.js",
     "both": "concurrently \"npm run client\" \"npm run server\""
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
   }
 }
