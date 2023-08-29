@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "client": "cd client && npm start",
+    "server": "cd server && nodemon app.js",
+    "both": "concurrently \"npm run client\" \"npm run server\""
+  }
+}
